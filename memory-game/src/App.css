@@ -1,38 +1,75 @@
-.App {
+html{
+  background-image:url('./components/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  font-family: 'Lato', sans-serif;
+}
+
+.App{
+  margin-left:5vw;
+  margin-right:5vw;
+}
+.header{
+  margin-top:5vh;
+  margin-bottom:10vh;
+  margin-left:10vw;
+  margin-right:10vw;
+  text-align:center;
+  background-color: rgba(0, 0, 0, 0.603);
+  
+}
+.header .title{
+  margin-top:1vh;
+  font-size:32px;
+  text-decoration: underline;
+  font-family: 'Langar', cursive;
+}
+.header .rules{
+  margin-top:1vh;
+  font-size:20px;
+}
+.header .displayText{
+  font-size:32px;
+  letter-spacing: 1.5px;
+  margin-top:0.5vh;
+}
+
+.scoreboard{
+  display:flex;
+}
+.score{
+  flex: 4 4 auto;
+  margin-top:1vh;
+  margin-bottom:0.5vh;
+  font-size:22px;
+}
+.highscore{
+  flex: 4 4 auto;
+  margin-top:1vh;
+  margin-bottom:0.5vh;
+  font-size:22px;
+}
+
+.card-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.card{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cardArt{
+  height:80%;
+  width:96%;
+  border: 5px outset rgb(240, 178, 22);
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardText{
+  font-size:22px;
+  font-weight:40px;
+  background-color: rgba(0, 0, 0, 0.603);
+  width:90%;
+  margin: 0 auto;
 }
